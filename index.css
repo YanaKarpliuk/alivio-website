@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: lato, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/*shared properties*/
+:root {
+  --dark: #292929;
+  --green: #01996d;
+  --darkGreen: #245852;
+  --gray: #d6d6d6;
+  --gray48: #484848;
+  --gray42: #424242;
+  --darkBg: #080809;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 275px;
+  margin: 0 auto;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.button_green {
+  background: var(--green);
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px 50px;
+}
+
+/* header */
+.header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px gray solid;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 23px;
+  width: 80px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item {
+  margin-right: 71px;
+}
+
+.nav-list__link {
+  color: var(--dark);
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.nav-button_green {
+  background: var(--green);
+  color: #fff;
+  border-radius: 4px;
+  padding: 13px 50px;
+  margin-left: 35px;
+}
+
+/*Hero*/
+.hero {
+  background: url("./images/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 895px;
+  padding-top: 175px;
+}
+
+.hero__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73.85px;
+  color: var(--green);
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31.4px;
+  width: 420px;
+  color: var(--gray48);
+  margin-bottom: 50px;
+}
+
+/*About*/
+.about {
+  padding-top: 169px;
+  padding-bottom: 50px;
+  height: 1606px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 52px;
+}
+
+.about-top__titles {
+  flex: 1;
+  margin-right: 136px;
+}
+
+.about-top__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37.68px;
+  color: var(--gray42);
+}
+
+.about-top__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 78.5px;
+  color: var(--green);
+}
+
+.about-top__text {
+  flex: 1;
+  color: var(--gray42);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.about-list__item {
+  width: 395px;
+}
+
+.about-list__item_bottom {
+  align-self: flex-end;
+}
+
+.about-list__title-box {
+  position: relative;
+}
+
+.about-list__title {
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000;
+}
+
+.about-list__title_green {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 225px;
+  color: var(--green);
+  opacity: 20%;
+}
+
+.about-list__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--gray42);
+  margin-bottom: 60px;
+}
+
+/*success*/
+.success {
+  background-color: var(--darkGreen);
+  padding: 229px 207px 177px;
+}
+
+.success-box {
+  display: flex;
+  align-items: center;
+  max-width: 1507px;
+  margin: 0 auto;
+}
+
+.success-content__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 78.5px;
+  color: #fff;
+  margin-bottom: 33px;
+}
+
+.success-content__text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 39.25px;
+  color: #fff;
+  margin-bottom: 57px;
+}
+
+/*Product*/
+.product {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 168px;
+}
+
+.product-images {
+  position: relative;
+  height: 648px;
+  margin-left: 40px;
+}
+
+.product-images__photo {
+  min-width: 638px;
+}
+
+.product-images__card {
+  position: relative;
+  width: 296px;
+  bottom: 210px;
+  right: 60px;
+}
+
+.product-content {
+  margin-left: 86px;
+}
+
+.product-content__subtitle {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 39.25px;
+  color: var(--gray42);
+  margin-bottom: 10px;
+}
+
+.product-content__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 78.5px;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.product-content__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31.4px;
+  color: var(--gray48);
+  margin-bottom: 40px;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--darkGreen);
+}
+
+.footer-box {
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 95px 92px 39px 275px;
+  height: 654px;
+}
+
+.footer-menu__title {
+  display: block;
+  font-weight: 900;
+  color: #fff;
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 60px;
+}
+
+.footer-menu-list__item {
+  margin-bottom: 60px;
+}
+
+.footer-menu-list__link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.socials {
+  display: flex;
+  align-self: flex-end;
+}
+
+.socials__item {
+  margin-right: 50px;
+}
+
+.socials__item:last-child {
+  margin-right: 0px;
+}
+
+.socials__item-white {
+  background-color: #fff;
+  padding: 26px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 85px;
+  height: 80px;
+}
+
+.socials__item-colorful {
+  padding: 26px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #80a4ce 0deg,
+    #f289aa 60deg,
+    #c68bf0 106.09deg,
+    #d164da 153.75deg,
+    #c963e8 221.25deg,
+    #bfc2e8 258.75deg,
+    #ffc999 288.75deg,
+    #d0d8c9 315deg,
+    #bad0f1 334.13deg,
+    #ced8cb 358.97deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.socials__item-fb {
+  width: 12px;
+  height: 24px;
+  margin: auto;
+}
+
+.socials__item-instagram {
+  width: 32px;
+  height: 30px;
+}
+
+.socials__item-twitter {
+  width: 32px;
+  height: 24px;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.store-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.9px;
+  letter-spacing: 0.5%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.store-options {
+  display: flex;
+}
+
+.store-options__btn {
+  margin-right: 14px;
+}
